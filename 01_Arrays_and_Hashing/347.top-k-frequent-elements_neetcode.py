@@ -1,7 +1,10 @@
-from typing import Dict, List
-from collections import defaultdict
-#from typing import list
+#
+# @lc app=leetcode id=347 lang=python3
+#
+# [347] Top K Frequent Elements
+#
 
+# @lc code=start
 class Solution:
     def topKFrequent(self, nums: list[int], k: int) -> list[int]:
         count = {}
@@ -19,11 +22,9 @@ class Solution:
                 if len(res) == k:
                     return res
 
-def main():
-    sol = Solution()
-    l = [1,1,1,2,2,3]
-    k = 2
-    sol.topKFrequent(l, k)
-    
-if __name__ == "__main__":
-    main()
+        # O(n)
+
+
+            
+# @lc code=end
+

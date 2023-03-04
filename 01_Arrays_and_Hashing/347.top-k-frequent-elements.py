@@ -14,7 +14,7 @@ class Solution:
             d[num] += 1
             
         ans = []
-        while(k > 0):
+        for _ in range(k):
             max_key = 0
             max_val = 0
             for key,val in d.items():
@@ -23,7 +23,6 @@ class Solution:
                     max_key = key 
             ans.append(max_key)
             del d[max_key]
-            k -= 1
             
         return ans
 
