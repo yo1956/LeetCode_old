@@ -3,20 +3,31 @@ from collections import defaultdict
 #from typing import list
 
 class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        ans = defaultdict(list)
-
-        for s in strs:
-            count = [0] * 26 
-            for c in s:
-                count[ord(c) - ord("a")] += 1
-            ans[tuple(count)].append(s)
-        return ans.values()
+    def topKFrequent(self, nums: list[int], k: int) -> list[int]:
+        d = defaultdict(int)
+        
+        for num in nums:
+            d[num] += 1
+            
+        ans = []
+        while(k > 0):
+            max_key = 0
+            max_val = 0
+            for k,v in d.items():
+                if max_val < v:
+                    max_val = v
+                    max_key = k 
+            ans.append(max_key)
+            del d[max_key]
+            k -= 1
+            
+        return ans
 
 def main():
     sol = Solution()
-    l = ["eat","tea","tan","ate","nat","bat"]
-    sol.groupAnagrams(l)
+    l = [1,1,1,2,2,3]
+    k = 2
+    sol.topKFrequent(l, k)
     
 if __name__ == "__main__":
     main()
