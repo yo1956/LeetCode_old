@@ -3,7 +3,6 @@ from collections import defaultdict
 #from typing import list
 
 class Solution:
-    def productExceptSelf(self, nums: List[int]) -> List[int]:
 
 def main():
     sol = Solution()
