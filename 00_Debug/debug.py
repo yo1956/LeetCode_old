@@ -4,7 +4,6 @@ import collections
 #from typing import list
 
 class Solution:
-    def longestConsecutive(self, nums: List[int]) -> int:
 
 def main():
     sol = Solution()
