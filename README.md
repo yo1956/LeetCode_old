@@ -1,2 +1,2 @@
 # LeetCode
-LeetCode solutions
+Record of solving LeetCode problems
