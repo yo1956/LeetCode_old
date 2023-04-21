@@ -4,11 +4,14 @@ import collections
 #from typing import list
 
 class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        ans = collections.defaultdict(list)
+        
 
 def main():
     sol = Solution()
-    nums = [100,4,200,1,3,2]
-    ans = sol.longestConsecutive(nums)
+    strs = ["eat","tea","tan","ate","nat","bat"]
+    ans = sol.groupAnagrams(strs)
     print(ans)
     
 if __name__ == "__main__":
