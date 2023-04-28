@@ -4,9 +4,6 @@ import collections
 #from typing import list
 
 class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        ans = collections.defaultdict(list)
-        
 
 def main():
     sol = Solution()

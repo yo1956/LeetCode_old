@@ -12,7 +12,7 @@ from collections import defaultdict
 
 # ----- ポイント ----- #
 # 1. dictのキーはhashableである必要が有る
-# 2. tupleはhashableである
+# 2. tupleはhashableであり、dictのキーに出来る
 # 3. lというlistをtuple(l)でtupleに変換できる
 # 4. listはmutable、tupleはimmutable
 # https://www.lifewithpython.com/2017/12/python-tuple-list-difference.html
